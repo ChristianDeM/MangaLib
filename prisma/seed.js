@@ -9,7 +9,8 @@ const prisma = new PrismaClient();
       create: {
         name: 'onepiece',
 		editorial: 'ajolonauta',
-		mission: 'Node'
+		tomosN: 2,
+        precio: 69,
       },
     });
 
