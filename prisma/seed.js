@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 (async function main() {
   try {
-    const Manga1 = await prisma.explorer.upsert({
+    const Manga1 = await prisma.manga.upsert({
       where: { name: 'onepiece' },
       update: {},
       create: {
@@ -14,7 +14,7 @@ const prisma = new PrismaClient();
       },
     });
 
-    
+    console.log('update manga'); 
   } catch(e) {
     console.error(e);
     process.exit(1);
