@@ -1,0 +1,15 @@
+{
+  "name": "mangalib",
+  "version": "1.0.0",
+  "description": "mangalib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MangaLib"
+  },
+  "author": "ChristianDm",
+  "license": "ISC"
+}
