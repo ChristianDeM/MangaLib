@@ -1,4 +1,4 @@
-# Manga lib  CRUD  [Back end]
+# Manga lib 📖  CRUD  [Back end]
 
 ##  Sobre el proyecto parte A back end
 <p>Este CRUD esta realizado para una base de datos para  una libreria de mangas/comics 
@@ -10,7 +10,7 @@
 - eslint:``8.15.0``
 
 
-## Informacion de el manga / comic  
+## Informacion de el manga / comic  📖
 
 - Nombre del manga.
 - Nombre de la Editorial. 
@@ -18,7 +18,7 @@
 - Precio de cada tomo unico.
 - Estado de  la coleccion completo o incompleto.
 
-## Operaciones de la base de datos.
+## Operaciones de la base de datos.💻
 
 - Leer  la informacion de la base de datos.
 - Crear un nuevo manga. con las carateristicaz anteriormente menscionadas.
@@ -26,7 +26,7 @@
 - Eliminar el manga en cuestion.
 
 
-## Endpoints
+## Endpoints 🔘
 | End points                     	| Request                        	|        	| Response                                                   	|
 |--------------------------------	|--------------------------------	|--------	|------------------------------------------------------------	|
 | http://localhost:3000/manga    	| http://localhost:3000/manga    	| GET    	| Muestra  la informacion de los mangas de la base de datos  	|
