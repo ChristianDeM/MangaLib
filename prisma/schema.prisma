@@ -9,3 +9,15 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model manga {
+  id Int @id @default(autoincrement())
+  name String @unique
+  editorial String @db.VarChar(255)
+  mission Int 
+  tomosN Int 
+  precio Int
+  estatus Boolean  @default(false)
+  dateCreated DateTime @default(now())
+  lastUpdated DateTime @updatedAt
+}
