@@ -13,6 +13,7 @@
   "author": "ChristianDm",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "jest": "^26.0.0"
   }
 }
