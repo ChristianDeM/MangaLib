@@ -4,10 +4,10 @@
 <p>Este CRUD esta realizado para una base de datos para  una libreria de mangas/comics 
 
 ## INFO 
-<p> JavaScript
-<p>Node: ``16.40.0``
-<p>Prisma:``3.14.0``
-<p>eslint:``8.15.0``
+- JavaScript
+- Node: ``16.40.0``
+- Prisma:``3.14.0``
+- eslint:``8.15.0``
 
 
 ## Informacion de el manga / comic  
@@ -59,9 +59,41 @@ model manga {
 }
 ```
 
+ ## Seed para prueba de la base de datos 
+Usamos ``Seed.js`` para llenar 1 manga  y realizar las pruebas con la extencion ``Thunder Client`` dentro de visual Estudio code.
 
-### Mangas table ejemplo
+
+```
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+(async function main() {
+  try {
+    const Manga1 = await prisma.manga.upsert({
+      where: { name: 'onepiece' },
+      update: {},
+      create: {
+        name: 'onepiece',
+		editorial: 'Panini',
+		tomosN: 2,
+        precio: 69,
+      },
+    });
+
+    console.log('update manga'); 
+  } catch(e) {
+    console.error(e);
+    process.exit(1);
+  } finally {
+    await prisma.$disconnect();
+  }
+})();
+```
+
+
+### Mangas table Resultado
 
 | id | Name      | Editorial | TomosN  | Precio | Estatus |
 |----|-----------|-----------|---------|--------|---------|
 | 01 | One piece | Panini    | 2       | 69     | false   |
+
