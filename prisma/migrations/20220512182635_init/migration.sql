@@ -3,7 +3,6 @@ CREATE TABLE "manga" (
     "id" SERIAL NOT NULL,
     "name" TEXT NOT NULL,
     "editorial" VARCHAR(255) NOT NULL,
-    "mission" INTEGER NOT NULL,
     "tomosN" INTEGER NOT NULL,
     "precio" INTEGER NOT NULL,
     "estatus" BOOLEAN NOT NULL DEFAULT false,
