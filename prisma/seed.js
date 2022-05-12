@@ -8,7 +8,7 @@ const prisma = new PrismaClient();
       update: {},
       create: {
         name: 'onepiece',
-		editorial: 'ajolonauta',
+		editorial: 'Panini',
 		tomosN: 2,
         precio: 69,
       },
